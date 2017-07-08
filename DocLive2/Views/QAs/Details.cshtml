@@ -1,0 +1,41 @@
+﻿@model DocLive2.Models.QA
+
+@{
+    ViewBag.Title = "Patient Queries";
+}
+
+<h2>Patient Queries</h2>
+    <div>
+        <h4>QA</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.question)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.question)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ans)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ans)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.flag)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.flag)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>

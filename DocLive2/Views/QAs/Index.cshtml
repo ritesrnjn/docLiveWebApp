@@ -1,0 +1,48 @@
+﻿@model IEnumerable<DocLive2.Models.QA>
+
+@{
+    ViewBag.Title = "Patient Queries";
+}
+
+<h2>Patient Queries</h2>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.question)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ans)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.flag)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        
+        
+        if(item.flag==true){
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.question)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ans)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.flag)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+    }
+    }
+    
+    </table>

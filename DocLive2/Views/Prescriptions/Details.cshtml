@@ -1,0 +1,484 @@
+﻿@model DocLive2.Models.Prescription
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Prescription</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneno)
+            <br /><br />
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.med1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty1)
+            <br /><br />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.med10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.med10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalqty10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalqty10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dose10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dose10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doesqty10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doesqty10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.test1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.test1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.test2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.test2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.test3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.test3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.test4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.test4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.test5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.test5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.test6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.test6)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

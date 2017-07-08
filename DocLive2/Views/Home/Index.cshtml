@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>DoctorLive</h1>
+    <p class="lead">Cloud based solutions for Doctor-Patient Interactions</p>
+    <p class="btn btn-default">
+        @Html.ActionLink("Add Administrator", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })
+    </p>
+    <div class="mytextbox">
+        @using (Html.BeginForm("Search", "myProfiles"))
+        {
+            @Html.TextBox("Name")
+            <input type="submit" value="Search" class="btn btn-default" />
+            }
+</div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            DoctorLive is our effort to make the process of treatment less painful.<br />
+            With this approach patients and doctors are more closely interlinked than ever.</p>
+        <p class="btn btn-default"> @Html.ActionLink("See Help", "About", "Home")</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Send a notification</h2>
+        <p>Sending a push notification or toast to your patients was never so easy. Now with a click of your mouse you can reach all of your patients or a specific patient.</p>
+        <p class="btn btn-default"> @Html.ActionLink("Send notification", "Index", "notificationTables")</p>
+    </div>
+    @*<div class="col-md-4">
+        <h2>Patient List</h2>
+        <p>Manage all your patients from one place. View, Create, Edit, Delete the details of your patients.</p>
+        <p class="btn btn-default"> @Html.ActionLink("See your patients >>", "Index", "notificationTables")</p>
+    </div>*@
+
+    <div class="col-md-4">
+        <h2>Quick Links</h2>
+        <p class="btn btn-default"> @Html.ActionLink("Patient List", "Index", "myProfiles")</p>
+        <p class="btn btn-default"> @Html.ActionLink("Patient Profile", "Index", "Contacts")</p>
+        <p class="btn btn-default"> @Html.ActionLink("Prescriptions", "Index", "Prescriptions")</p>
+        <p class="btn btn-default"> @Html.ActionLink("Patient Queries", "Index", "QAs")</p>
+        <p class="btn btn-default"> @Html.ActionLink("Send notification", "Index", "notificationTables")</p>
+        <p class="btn btn-default"> @Html.ActionLink("Case Sheet", "Index", "Casesheets")</p>
+        <p class="btn btn-default"> @Html.ActionLink("Doctor's Biodata", "Index", "DoctorInfoes")</p>
+
+    </div>
+</div>

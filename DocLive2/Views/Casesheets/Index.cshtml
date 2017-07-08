@@ -1,0 +1,111 @@
+﻿@model IEnumerable<DocLive2.Models.Casesheet>
+
+@{
+    ViewBag.Title = "Case sheet";
+}
+
+<h2>Case sheets</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sex)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.admission_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.complaints_history)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vitals_bp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vitals_sugar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vitals_temp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.presonal_history)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.examination_cardio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.examination_respiratory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.examination_abdomen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diagnosis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.treatment_advised)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sex)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.admission_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.complaints_history)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vitals_bp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vitals_sugar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vitals_temp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.presonal_history)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.examination_cardio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.examination_respiratory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.examination_abdomen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diagnosis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.treatment_advised)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

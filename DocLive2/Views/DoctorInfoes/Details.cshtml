@@ -1,0 +1,50 @@
+﻿@model DocLive2.Models.DoctorInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DoctorInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.medicalid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.medicalid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doctornames)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctornames)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.specialization)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.specialization)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aboutdoctor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aboutdoctor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

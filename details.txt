@@ -1,0 +1,20 @@
+
+
+BUGS FIXED...
+--------------
+1. Database removed completely
+2. Search patients by name
+3. all tables with model view and controllers added.
+4. all pages renamed
+5. UI Improved 
+6. new columns
+7. log in page modified
+8. Extremely beautiful
+9. more improvement in UI
+10. QA table included
+
+
+
+
+features missing
+1. dashboard notification column

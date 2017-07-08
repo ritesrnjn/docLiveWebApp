@@ -1,0 +1,130 @@
+﻿@model DocLive2.Models.Casesheet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Casesheet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.admission_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.admission_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.complaints_history)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.complaints_history)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vitals_bp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vitals_bp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vitals_sugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vitals_sugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vitals_temp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vitals_temp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.personal_history)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.presonal_history)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.examination_cardio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.examination_cardio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.examination_respiratory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.examination_respiratory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.examination_abdomen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.examination_abdomen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diagnosis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diagnosis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.treatment_advised)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.treatment_advised)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
